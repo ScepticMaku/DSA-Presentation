@@ -13,7 +13,7 @@ public class main {
         sort(arr);
         printArray(arr);
         
-        // first i loop 64, 25, 12, 22, 11:
+        // first i loop 64, 25, 12, 22, 11: selects 64 as starting point for target element
         // j loop 1 if arr[j](25) < arr[min_idx](64) then min_idx = j which selects 25 as target
         // j loop 2 if arr[j](12) < arr[min_idx](25) then min_idx = j which selects 12 as target
         // j loop 3 if arr[j](22) < arr[min_idx](12) then skips
@@ -24,7 +24,7 @@ public class main {
         //arr[min_idx](empty) = arr[i](64)
         //arr[i](empty) = temp(11)
         
-        //thus, 11, 25, 12, 22, 64 is the updated array
+        //thus, 11, 25, 12, 22, 64 is the updated array after the first loop
     }
     
     public static void sort(int arr[]){
@@ -40,11 +40,10 @@ public class main {
             int temp = arr[min_idx];  
             arr[min_idx] = arr[i];
             arr[i] = temp;
+            
+            // breaks after the first loop, convert to comment to disable
+           // break;
         }
-        
-        /*for(int k = 0; k < n; k++){
-                System.out.print(arr[k]+ " ");
-            }*/
     }
     
     public static void printArray(int arr[]) {
