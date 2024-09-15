@@ -14,6 +14,7 @@ public class main {
         printArray(arr);
         
         // first i loop 64, 25, 12, 22, 11: selects 64 as starting point for target element
+        // initalizes min_idx = i(0) 
         // j loop 1 if arr[j](25) < arr[min_idx](64) then min_idx = j which selects 25 as target
         // j loop 2 if arr[j](12) < arr[min_idx](25) then min_idx = j which selects 12 as target
         // j loop 3 if arr[j](22) < arr[min_idx](12) then skips
