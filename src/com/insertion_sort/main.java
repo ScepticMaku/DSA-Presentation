@@ -16,7 +16,7 @@ public class main {
         printArray(arr);
         
         // First i loop 12, 11, 13, 5, 6: Selects 11 as a starting point for target and 12 is assumed to be sorted
-        // initializes key as 11 which makes arr[i](arr[1]) empty and intializes search variable j as i but 0
+        // initializes key as 11 which makes arr[i](arr[1]) empty and intializes search variable j as i - 1
         // while j(0) >= 0 and arr[j](12) > key(11), true: then, arr[j+1]{arr[1](empty) = arr[j](12)}, initializes j to -1
         // while j(-1) >= 0 and arr[j](empty) > key(11), false: then, the while breaks.
         // lastly, arr[j + 1](0) = key(11)
